@@ -49,4 +49,78 @@ public class Cuenta {
     public Cuenta() {
     	
     }
+
+	public Long getId_cuenta() {
+		return id_cuenta;
+	}
+
+	public void setId_cuenta(Long id_cuenta) {
+		this.id_cuenta = id_cuenta;
+	}
+
+	public String getNumeroCuenta() {
+		return numeroCuenta;
+	}
+
+	public void setNumeroCuenta(String numeroCuenta) {
+		this.numeroCuenta = numeroCuenta;
+	}
+
+	public Double getSaldo() {
+		return saldo;
+	}
+
+	public void setSaldo(Double saldo) {
+		this.saldo = saldo;
+	}
+
+	public Date getFch_apertura() {
+		return fch_apertura;
+	}
+
+	public void setFch_apertura(Date fch_apertura) {
+		this.fch_apertura = fch_apertura;
+	}
+
+	public Boolean getConNomina() {
+		return conNomina;
+	}
+
+	public void setConNomina(Boolean conNomina) {
+		this.conNomina = conNomina;
+	}
+
+	public Usuario getUsuario() {
+		return usuario;
+	}
+
+	public void setUsuario(Usuario usuario) {
+		this.usuario = usuario;
+	}
+
+	public List<Transacion> getTransacionesEnviadas() {
+		return transacionesEnviadas;
+	}
+
+	public void setTransacionesEnviadas(List<Transacion> transacionesEnviadas) {
+		this.transacionesEnviadas = transacionesEnviadas;
+	}
+
+	public List<Transacion> getTransacionesRecibidas() {
+		return transacionesRecibidas;
+	}
+
+	public void setTransacionesRecibidas(List<Transacion> transacionesRecibidas) {
+		this.transacionesRecibidas = transacionesRecibidas;
+	}
+
+	public List<Credito> getCreditos() {
+		return creditos;
+	}
+
+	public void setCreditos(List<Credito> creditos) {
+		this.creditos = creditos;
+	}
+    
+    
 }

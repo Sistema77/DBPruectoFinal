@@ -11,20 +11,10 @@ public class inicio {
 	public static void main(String[] args) {
 		EntityManagerFactory emf = Persistence.createEntityManagerFactory("default");
 		EntityManager em = emf.createEntityManager();
-		
-		// TEST
-		
 
-		    	Usuario usuario = new Usuario();
-		        
-		        EntityTransaction tx = em.getTransaction();
+		Usuario usuario = new Usuario();
 
-		        tx.begin();
-		        em.persist(usuario);
-		        tx.commit();
-		    
-	
-		if(em.isOpen()) {
+		if (em.isOpen()) {
 			em.close();
 		}
 	}
