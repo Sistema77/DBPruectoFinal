@@ -12,7 +12,7 @@ import jakarta.persistence.ManyToOne;
 import jakarta.persistence.Table;
 
 @Entity
-@Table(name = "credito", schema = "public")
+@Table(name = "credito", schema = "schemabody")
 public class Credito {
 	@Id
 	@GeneratedValue(strategy = GenerationType.AUTO)
